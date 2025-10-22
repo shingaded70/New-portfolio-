@@ -19,4 +19,77 @@
     header { text-align: center; padding: 4rem 0 2rem; }
     h1 { font-size: 2.8rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, var(--primary), #7c3aed); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .tagline { font-size: 1.2rem; color: var(--gray); margin-bottom: 1.5rem; }
-    .btn { display: inline-block; background: var(--primary
+    .btn { display: inline-block; background: var(--primary); color: white; padding: 0.6rem 1.5rem; border-radius: 30px; text-decoration: none; font-weight: 600; transition: transform 0.3s; }
+    .btn:hover { transform: translateY(-3px); }
+
+    section { margin: 4rem 0; }
+    h2 { font-size: 2rem; margin-bottom: 2rem; position: relative; display: inline-block; }
+    h2::after { content: ''; position: absolute; bottom: -8px; left: 0; width: 50px; height: 4px; background: var(--primary); border-radius: 2px; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .project-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+    .card-content { padding: 1.5rem; }
+    .card-content h3 { margin-bottom: 0.75rem; }
+    .card-content p { color: var(--gray); margin-bottom: 1rem; }
+    .card-link { color: var(--primary); text-decoration: none; font-weight: 600; }
+    .card-link:hover { text-decoration: underline; }
+
+    footer { text-align: center; padding: 2rem 0; color: var(--gray); border-top: 1px solid #e2e8f0; margin-top: 3rem; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      .container { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-in">
+      <h1>Hello, I'm Dhiraj</h1>
+      <p class="tagline">Computer Science Graduate | Data Analytics | Cloud | Cybersecurity</p>
+      <a href="https://drive.google.com/uc?export=download&id=1Ro7W2gq7DVhcdg99f70ZMK2-MSVz_MxP" class="btn fade-in delay-1" target="_blank">Download Resume</a>
+    </header>
+
+    <section>
+      <h2 class="fade-in">About Me</h2>
+      <p class="fade-in delay-1">
+        Computer Science graduate with strong foundations in C, C++, Python, Cloud Computing, and Cybersecurity. 
+        Hands-on experience in Data Analytics through Deloitte Job Simulation, ESG, and Cybersecurity internships with Tata. 
+        Certified in AWS Cloud, Generative AI, and multiple technical domains.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="fade-in">Projects</h2>
+      <div class="projects">
+        <div class="project-card fade-in delay-2">
+          <div class="card-content">
+            <h3>Deloitte Data Analytics Simulation</h3>
+            <p>Built Tableau dashboards, applied forensic tech & analytics to solve business problems.</p>
+            <a href="#" class="card-link">View Simulation →</a>
+          </div>
+        </div>
+        <div class="project-card fade-in delay-3">
+          <div class="card-content">
+            <h3>Generative AI Project Planning (AWS)</h3>
+            <p>Completed AWS training to design AI projects aligned with business requirements.</p>
+            <a href="#" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="project-card fade-in delay-3">
+          <div class="card-content">
+            <h3>Expense Tracker (Flask + Termux)</h3>
+            <p>A lightweight, offline-first expense tracker built with Python Flask and SQLite — runs 100% on Android via Termux.</p>
+            <a href="https://github.com/Shingade70/expense-tracker" class="card-link">GitHub Repo →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="fade-in">
+      <p>Let's connect! 📞 +91 7248915373</p>
+    </footer>
+  </div>
+</body>
+</html>
